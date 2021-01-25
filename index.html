@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертер</title>
+
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+
+<body class="container">
+
+    <div class="jumbotron">
+        <h1>Конвертер</h1>
+    </div>
+
+    <p>1. Доступно с "kilogram" на "pounds" | с "pounds" на "kilogram"... (с киллограм на фунты) | (с фунтов на
+        киллограм)
+    </p>
+    <p>2. Доступно с "metre" на "inches" | c "inches" на "metre"... (с метров на дюймы) | (с дюймов на метры)</p>
+    <p>3. Доступно с "mil" на "inches" | с "mil" на "milimeter"... (с одной тысячной дюймы на дюйм) | (с одной тысячной
+        дюймы на миллиметр)</p>
+    <p>4. Доступно с "inches" на "mils" | с "inches" на "centimeters"...(с дюймов на одной тысячной дюймы) | (с дюймов
+        на сантиметры)</p>
+
+    <form method="POST" action="/">
+        <div class="form-group">
+            <label for="unit">Конвертировать с</label>
+            <input type="text" class="form-control" id="unit" name="unit">
+        </div>
+
+        <div class="form-group">
+            <label for="valueForUnit">Количество</label>
+            <input type="text" class="form-control" id="valueForUnit" name="valueForUnit">
+        </div>
+
+        <div class="form-group" style="padding-top: 100px;">
+            <label for="convert_to">Конвертировать в</label>
+            <input type="text" class="form-control" id="convert_to" name="convert_to">
+        </div>
+
+        <button type="submit">Конвертировать</button>
+    </form>
+</body>
+
+</html>
